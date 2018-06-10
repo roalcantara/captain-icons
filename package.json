@@ -5,7 +5,9 @@
   "main": "index.js",
   "homepage": "https://mariodelvalle.github.io/CaptainIconWeb",
   "scripts": {
-    "commitmsg": "commitlint -E GIT_PARAMS --config ./.commitlintrc.yml"
+    "commitmsg": "commitlint -E GIT_PARAMS --config ./.commitlintrc.yml",
+    "lint:saas": "./node_modules/.bin/sass-lint -c ./.sass-lint.yml --verbose --no-exit",
+    "lint": "yarn lint:saas"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,7 @@
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
     "@commitlint/config-conventional": "^7.0.1",
-    "husky": "^0.14.3"
+    "husky": "^0.14.3",
+    "sass-lint": "^1.12.1"
   }
 }
