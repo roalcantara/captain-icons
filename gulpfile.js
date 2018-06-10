@@ -30,8 +30,14 @@ gulp.task('sass:minify', function () {
     .pipe(gulp.dest('dist'));
 });
 
+gulp.task('fonts:copy', function () {
+  return gulp.src('./src/web-fonts/*.*')
+    .pipe(gulp.dest('dist/web-fonts'));
+});
+
 gulp.task('build', [
   'dist:clean',
   'sass:compile',
-  'sass:minify'
+  'sass:minify',
+  'fonts:copy'
 ]);
