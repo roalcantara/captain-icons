@@ -4,6 +4,7 @@ var gulp = require('gulp');
 var clean = require('gulp-clean');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
+var pug = require('gulp-pug');
 
 gulp.task('dist:clean', function () {
   return gulp.src('./dist', {read: false})
@@ -35,9 +36,18 @@ gulp.task('fonts:copy', function () {
     .pipe(gulp.dest('dist/web-fonts'));
 });
 
+gulp.task('pug:compile', function() {
+  return gulp.src('./src/index.pug')
+    .pipe(pug({
+      pretty: true
+    }))
+    .pipe(gulp.dest('./'))
+});
+
 gulp.task('build', [
   'dist:clean',
   'sass:compile',
   'sass:minify',
-  'fonts:copy'
+  'fonts:copy',
+  'pug:compile'
 ]);
