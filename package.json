@@ -23,6 +23,7 @@
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
     "@commitlint/config-conventional": "^7.0.1",
+    "gulp": "^3.9.1",
     "husky": "^0.14.3",
     "sass-lint": "^1.12.1"
   }
