@@ -1,0 +1,18 @@
+{
+  "name": "captain-icons",
+  "version": "0.1.0",
+  "description": "+350 Awesome FREE vector icons to empower your mobile and designs",
+  "main": "index.js",
+  "homepage": "https://mariodelvalle.github.io/CaptainIconWeb",
+  "repository": {
+    "type": "git",
+    "url": "roalcantara/captain-icons"
+  },
+  "keywords": [
+    "icon",
+    "icons",
+    "web-font"
+  ],
+  "author": "Rogério R. Alcântara <rogerio.alcantara@gmail.com> (http://github.com/roalcantara)",
+  "license": "CC-BY-SA-4.0"
+}
