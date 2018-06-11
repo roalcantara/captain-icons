@@ -29,9 +29,23 @@ $ yarn add captain-icon
 ## Cheat Sheet
 For details and embeddings codes, click [here](https://roalcantara.github.io/captain-icons/).
 
-## Contributing
+## Configuration
 
-Bug reports and pull requests are welcome on [GitHub](https://github.com/roalcantara/captain-icons). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+The following variables are allowed to be set externally:
+
+| Variable | Description | Default value |
+| -------- | ----------- | ------------- |
+| $captain-icon-selector | Defines main icon selector | cap-icon |
+| $captain-icon-slug | Defines the icon selector | ci |
+| $captain-icon-font-path | Defines the fonts' path | web-fonts |
+
+## How to contribute
+
+*   Bug reports and pull requests are welcome on [GitHub](https://github.com/roalcantara/captain-icons)
+*   Follow the [Semantic Versioning Specification](http://semver.org/)
+*   Follow the [GitHub Flow](https://guides.github.com/introduction/flow/)
+*   Follow the [5 Useful Tips For A Better Commit Message](https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message) article and the [How to Write a Git Commit Message](http://chris.beams.io/posts/git-commit/) post
+*   Use [Commitizen cli](http://commitizen.github.io/cz-cli/) when committing
 
 ## Code of Conduct
 

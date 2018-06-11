@@ -12,17 +12,16 @@ gulp.task('dist:clean', function () {
 });
 
 gulp.task('sass:compile', function () {
-  return gulp.src('./src/sass/main.sass')
+  return gulp.src('./src/sass/captain-icons.sass')
     .pipe(sass({
       outputStyle: 'extended'
     })
     .on('error', sass.logError))
-    .pipe(concat('captain-icons.css'))
     .pipe(gulp.dest('dist'));
 });
 
 gulp.task('sass:minify', function () {
-  return gulp.src('./src/sass/main.sass')
+  return gulp.src('./src/sass/captain-icons.sass')
     .pipe(sass({
       outputStyle: 'compressed'
     })
