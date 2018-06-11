@@ -7,7 +7,15 @@
   "scripts": {
     "commitmsg": "commitlint -E GIT_PARAMS --config ./.commitlintrc.yml",
     "lint:saas": "./node_modules/.bin/sass-lint -c ./.sass-lint.yml --verbose --no-exit",
-    "lint": "yarn lint:saas"
+    "lint": "yarn lint:saas",
+    "version:current": "echo $npm_package_version",
+    "version:commit": "git commit -am \"chore(release): Bump version to $(npm run version:current --silent)\"",
+    "version:major": "npm --no-git-tag-version version major && yarn version:commit",
+    "version:minor": "npm --no-git-tag-version version minor && yarn version:commit",
+    "version:patch": "npm --no-git-tag-version version patch && yarn version:commit",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "release:tag": "git tag -a `echo v$(npm run version:current --silent)`",
+    "release": "yarn release:tag && git push && git push --tags"
   },
   "repository": {
     "type": "git",
@@ -23,6 +31,7 @@
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
     "@commitlint/config-conventional": "^7.0.1",
+    "conventional-changelog-cli": "^2.0.1",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.4.0",
     "gulp-concat": "^2.6.1",
