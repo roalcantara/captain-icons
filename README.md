@@ -29,6 +29,16 @@ $ yarn add captain-icon
 ## Cheat Sheet
 For details and embeddings codes, click [here](https://roalcantara.github.io/captain-icons/).
 
+## Configuration
+
+The following variables are allowed to be set externally:
+
+| Variable | Description | Default value |
+| -------- | ----------- | ------------- |
+| $captain-icon-selector | Defines main icon selector | cap-icon |
+| $captain-icon-slug | Defines the icon selector | ci |
+| $captain-icon-font-path | Defines the fonts' path | web-fonts |
+
 ## Contributing
 
 Bug reports and pull requests are welcome on [GitHub](https://github.com/roalcantara/captain-icons). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
