@@ -1,5 +1,7 @@
 # Captain Icons
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/roalcantara/captain-icons.svg)](https://greenkeeper.io/)
+
 A npm package that easily provides the awesome **[Captain Icon](https://mariodelvalle.github.io/CaptainIconWeb/)**'s +350 FREE vector icons to empower your mobile and designs.
 
 ![npm](https://img.shields.io/npm/v/npm.svg)
